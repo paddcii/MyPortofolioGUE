@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d0d0f">
+<title>Fadlah Afrizal | IT Support &amp; Web Designer</title>
+<meta name="description" content="Portofolio Fadlah Afrizal, mahasiswa Teknik Informatika yang fokus pada IT Support dan Technical Support.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<header class="nav" id="nav"><div class="wrap nav-in">
+  <a href="#home" class="logo">Fadlah<span>.</span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu"><a href="#tentang">Tentang</a><a href="#pengalaman">Pengalaman</a><a href="#proyek">Project</a><a href="#sertifikat">Sertifikat</a><a href="#kontak">Kontak</a></nav>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap hero-in">
+  <div class="hero-txt">
+    <p class="hi">Halo, saya</p>
+    <h1>Fadlah<br>Afrizal</h1>
+    <p class="role">Saya seorang <b id="role"></b></p>
+    <p class="lead">Mahasiswa Teknik Informatika yang suka memecahkan masalah perangkat, jaringan, dan tampilan website.</p>
+    <div class="cta"><a class="btn pri" href="#proyek">Lihat project</a><a class="btn" id="cv" download>Unduh CV</a></div>
+    <dl class="stats"><div><dt data-n="6" id="sp">0</dt><dd>Project</dd></div><div><dt data-n="6">0</dt><dd>Bulan magang</dd></div><div><dt id="sc" data-n="1">0</dt><dd>Sertifikat</dd></div></dl>
+  </div>
+  <figure class="portrait"><img src="../assets/img/hero.jpg" alt="POTO" width="400" height="500"></figure>
+</div></section>
+
+<section class="sec" id="tentang"><div class="wrap">
+  <h2 class="rv">Tentang saya</h2>
+  <div class="two">
+    <p class="rv big">Saya adalah mahasiswa S1 Teknik Informatika di Universitas Pamulang yang memiliki minat untuk membangun karier di bidang teknologi informasi, khususnya sebagai IT Support dan Technical Support. Saya tertarik dengan dunia teknologi dan senang mempelajari hal-hal baru untuk mengembangkan kemampuan serta menambah pengalaman di bidang IT.</p>
+    <div class="rv skills" id  ="skills"></div>
+  </div>
+  <h3 class="rv sub">Pendidikan</h3>
+  <ul class="tl">
+    <li class="rv"><time>2026 - sekarang</time><div><b>Universitas Pamulang</b><span>S1 Teknik Informatika, Tangerang Selatan</span></div></li>
+    <li class="rv"><time>2023 - 2026</time><div><b>SMK Citra Negara</b><span>Teknik Jaringan Komputer dan Telekomunikasi, Depok</span></div></li>
+  </ul>
+</div></section>
+
+<section class="sec alt" id="pengalaman"><div class="wrap">
+  <h2 class="rv">Pengalaman</h2>
+  <ul class="tl">
+    <li class="rv"><time>Des 2024 - Mei 2025</time><div><b>PT Kreasi Berdikari Infomedia</b><span>Digital Marketer dan UI Designer Website</span><p>Memperbaiki bug dan memantau website, membuat konten Sosial Media, serta mengedit video dengan CapCut dan Adobe After Effect.</p></div></li>
+    <li class="rv"><time>2024 - 2026</time><div><b>Karang Taruna RT</b><span>Ketua Pelaksana</span><p>Mengoordinasikan perencanaan dan pelaksanaan kegiatan organisasi.</p></div></li>
+    <li class="rv"><time>2023 - 2026</time><div><b>IT Club SMK Citra Negara</b><span>Anggota aktif</span><p>Mempelajari berbagai teknologi dan Berlatih mempresentasikan perangkat teknologi kepada audiens.</p></div></li>
+  </ul>
+</div></section>
+
+<section class="sec" id="proyek"><div class="wrap">
+  <h2 class="rv">Project</h2><p class="rv muted">Beberapa Project web yang telah saya kerjakan.</p>
+  <div class="grid" id="projects"></div>
+</div></section>
+
+<section class="sec alt" id="sertifikat"><div class="wrap">
+  <h2 class="rv">Sertifikat</h2>
+  <div class="grid g4" id="certs"></div>
+</div></section>
+
+<section class="sec" id="kontak"><div class="wrap contact">
+  <h2 class="rv">Kontak Saya</h2>
+  <p class="rv muted">Terbuka untuk magang, pekerjaan, atau proyek website.</p>
+  <a class="rv mail" id="mail"></a>
+  <div class="rv soc" id="socials"></div>
+  <p class="rv muted">Depok, Jawa Barat</p>
+</div></section>
+</main>
+<footer><div class="wrap">&copy; <span id="yr"></span> @Paddcii</div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt" hidden>
+  <div class="mbg" data-close></div>
+  <div class="mbox"><button class="x" data-close aria-label="Tutup">&times;</button>
+    <div class="mimg"><img id="mi" alt=""></div>
+    <div class="mbody"><p class="muted" id="mk"></p><h3 id="mt"></h3><p id="md"></p><div class="tags" id="mg"></div><a class="btn pri" id="ml" target="_blank" rel="noopener">Kunjungi website</a></div>
+  </div>
+</div>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
