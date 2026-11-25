@@ -35,3 +35,4 @@ document.querySelectorAll('main section[id]').forEach(s=>so.observe(s));
 const rl=$('#role');let ri=0,ci=0,del=false;
 (function tp(){const w=PROFILE.roles[ri];ci+=del?-1:1;rl.textContent=w.slice(0,ci);let d=del?35:70;
 if(!del&&ci==w.length){del=true;d=1400}else if(del&&ci==0){del=false;ri=(ri+1)%PROFILE.roles.length;d=300}setTimeout(tp,d)})();
+
